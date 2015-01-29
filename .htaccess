@@ -1,0 +1,19 @@
+RewriteEngine on
+
+RewriteRule ^index$ media.php?page=home [L]
+RewriteRule ^katalog$ media.php?page=produk&act=katalog [L]
+RewriteRule ^blog$ media.php?page=blog&act=artikel [L]
+RewriteRule ^cara-belanja$ media.php?page=about&act=carabelanja [L]
+RewriteRule ^cart$ media.php?page=order&act=cart [L]
+RewriteRule ^sign$ media.php?page=customers&act=sign [L]
+RewriteRule ^logout$ media.php?page=customers&act=logout [L]
+RewriteRule ^akun-saya$ media.php?page=customers&act=akunsaya [L]
+RewriteRule ^checkout$ media.php?page=order&act=checkout [L]
+RewriteRule ^detail-order$ media.php?page=order&act=detailorder [L]
+RewriteRule ^invoice$ media.php?page=order&act=invoice [L]
+RewriteRule ^konfirmasi-pembayaran$ media.php?page=order&act=konfrmbayar [L]
+RewriteRule ^item-kategori-(.*)$ media.php?page=produk&act=katalog&kid=$1 [L]
+RewriteRule ^item-(.*)$ media.php?page=produk&act=detailproduk&id=$1 [L]
+RewriteRule ^artikel-(.*)$ media.php?page=blog&act=detailartikel&bid=$1 [L]
+RewriteRule ^detail-id-pemesanan-(.*)$ media.php?page=customers&act=detailpemesanan&pid=$1 [L]
+
