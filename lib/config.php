@@ -5,11 +5,11 @@ if(!defined('__NOT_DIRECT')){
 }
 defined('__NOT_DIRECT') || define('__NOT_DIRECT',1);
 
-$host = "mysql.idhostinger.com";
-$user = "u398863027_umil";
-$pass = "m4njinGg";
-$db = "u398863027_umil";
-//$upload_dir = "C:/xampp/htdocs/pw2/project/upload";
+$host = "localhost";
+$user = "root";
+$pass = "";
+$db = "db_umil";
+
 $upload_dir = "../../../upload";
 
 $connect = mysql_connect($host, $user, $pass);
